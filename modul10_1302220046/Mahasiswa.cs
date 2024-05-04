@@ -2,12 +2,17 @@ namespace modul10_1302220046
 {
     public class Mahasiswa
     {
-        public DateOnly Date { get; set; }
+        public String name { get; set; }
+        public String nim {  get; set; }
+        public List<String> course { get; set; }
+        public int year { get; set; }
 
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
-        public string? Summary { get; set; }
+        public Mahasiswa (String name, String nim, int year, List<String> course)
+        {
+            this.name = name;
+            this.nim = nim;
+            this.year = year;
+            this.course = course;
+        }
     }
 }
